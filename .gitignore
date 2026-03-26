@@ -1,0 +1,24 @@
+# Archivos generados por el script (se regeneran al ejecutar)
+lane_sensitivity.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
