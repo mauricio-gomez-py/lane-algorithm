@@ -16,8 +16,10 @@ El Algoritmo de Lane es un método iterativo clásico de optimización minera qu
 | **Planta (H)** | Toneladas de mineral procesado por año |
 | **Mercado (K)** | Onzas de metal vendibles por año |
 
-La ley de corte óptima **g\*** se obtiene como la **mediana** de las tres leyes de corte que optimizan cada restricción por separado, con actualización iterativa del costo de oportunidad del capital.
-
+## Observación
+* El script está en proceso de mejora, buscando generalizarlo para la evaluación economica de proyectos que exploten otros metales de manera individual o que sean polimetalicos.
+* El resultado de la Ley de corte óptima de Lane (0.039015 oz/ton) fue validada por otro profesional, sin embargo las ecuaciones de las leyes break-even serán revisadas en una siguiente versión para asegurar que sus cálculos esten correctos para ser usados en otros datasets.
+* Una próxima versión del script será capaz de leer los datos de entrada (tabla tonne/grad, parametros economicos y de capacidad) desde un archivo separado, evitando tener que "hardcodear" los datos en el mismo script.
 ---
 
 ## Estructura del Proyecto
@@ -74,7 +76,6 @@ Cut off (Oz/ton), Mineral (Mton), Au (Oz/ton), REM
 ```
 
 Donde `REM` es la razón estéril/mineral (Stripping Ratio).
-
 ---
 
 ## Salidas
@@ -103,7 +104,7 @@ El script genera:
 
 ## Contexto Académico
 
-Desarrollado como parte del Magíster en Inteligencia Artificial aplicada a la Industria — **UAI (Universidad Adolfo Ibáñez)**, módulo de IA en Minería.
+Desarrollado buscando automatizar la aplicación del algoritmo de Kenneth Lane para la optimización de leyes de corte, acelerando la evaluación económica de proyectos mineros
 
 ---
 
